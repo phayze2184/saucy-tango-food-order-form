@@ -1,16 +1,83 @@
-# React + Vite
+# Saucy Tango Food Order Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React and Vite food ordering app with a styled menu, reusable food item cards, and a controlled order form.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Saucy Tango Food Order Form is a small frontend project built with React. It presents a restaurant-style landing page with featured menu items and a basic order form that collects customer details and confirms the submission with an alert.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Reusable food item cards with images, names, and prices
+- Header section with restaurant branding
+- Controlled React form for customer details and order input
+- Modular styling with CSS Modules
+- Fast local development with Vite
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- CSS Modules
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the app locally
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+- `npm run dev` starts the development server
+- `npm run build` creates a production build
+- `npm run preview` previews the production build locally
+- `npm run lint` runs ESLint
+
+## Project Structure
+
+```text
+src/
+  App.jsx
+  App.module.css
+  Header.jsx
+  Header.module.css
+  FoodItem.jsx
+  FoodItem.module.css
+  FoodOrderForm.jsx
+  FoodOrderForm.module.css
+  index.css
+  index.jsx
+```
+
+## Current Behavior
+
+- Displays three sample dishes: Shakshuka, Spaghetti Carbonara, and Margherita Pizza
+- Accepts name, phone, address, and order details
+- Shows a browser alert after form submission
+
+## Possible Improvements
+
+- Add form validation
+- Replace the alert with an on-page confirmation message
+- Store menu data in an array and render cards with `.map()`
+- Connect the form to a backend or database
+
+## Author
+
+Created as a frontend practice project.
